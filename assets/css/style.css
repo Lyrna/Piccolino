@@ -13,15 +13,16 @@ body{
 
 li{
 	margin:0.3em;
+	color: black !important;
 }
 
 /*LIENS*/
 a{
-	color:black;
+	color:black !important;
 }
 
-a:hover{
-	color:#9F9A1C;
+nav a:hover{
+	color:#9F9A1C !important;
 }
 
 /*TITRES*/
@@ -32,6 +33,18 @@ h1{
 	border-bottom:3px solid #DFCB00;
 	margin-top:5%;
 	margin-bottom:3%;
+}
+
+h1[id^="ancre"] {
+padding-top: 120px;
+position: relative;
+top: -120px;
+margin-bottom: -100px;
+}
+
+h2{
+	font-size:1em;
+	font-weight: bold;
 }
 
 
@@ -59,7 +72,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 }
 
 /*TEXTES*/
-
+/*descriptions qui sont juste en dessous des h1 - nos gammes - notre histoire*/
 .descriptionforte{
 	font-size:2em;
 	text-align:center;
@@ -72,7 +85,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 
 .gamme{
 	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-	margin:5%;
+	margin:10%;
 }
 
 .imagegamme{
@@ -80,6 +93,31 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	width:5em;
 	align-self: center;
 	margin-top:5%;
+}
+
+.imagegamme2{
+	height:auto;
+	width:10em;
+	display:block;
+	align-self: center;
+}
+
+.petittext{
+	font-size:0.6em;
+	font-weight: bold;
+}
+
+.btn{
+	background-color:#DBCF00;
+	font-weight: bold;
+	font-size:0.8em;
+	position: relative;
+	z-index:1;
+}
+
+.btn:hover{
+	background-color:#D6B72A;
+	font-size:0.8em;
 }
 
 /*NOTRE HISTOIRE*/
@@ -108,18 +146,48 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	width: 10em;
 }
 
+
 @media screen and (max-width: 600px){
+
+
+
+@media screen and (max-width: 600px){
+/*entête*/
 	.logo{
 		height:3em;
 		width: auto;
 	}
 
+/*titres*/
+h1{
+	font-size:3em;
+	text-align:center;
+}
+
+h2{
+	font-size:2em;
+}
+/*carousel*/
 	.carousel{
 		margin-top:9%;
 		padding-top: 10%;
 	}
 
+/*section gamme*/
+	.petittext{
+		font-size:1.2em;
+	}
+
+	.btn{
+	font-size:1.2em;
+	}
+
+	.btn:hover{
+	font-size:1.2em;
+	}
+
+/*section notre histoire*/
 	.description{
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 }
