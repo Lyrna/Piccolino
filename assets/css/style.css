@@ -1,7 +1,8 @@
 body{
 	font-family: 'MathJax_Main', Georgia, serif;
+	background-image:url(assets/img/PDF/PiccolinoFondSite.pdf);
 }
-
+/*BARRE NAVIGATION*/
 .bg-white{
 	border-bottom:3px solid #EBE667;
 	font-size:1.8em;
@@ -9,6 +10,11 @@ body{
 	letter-spacing: 0.2em;
 }
 
+li{
+	margin:0.3em;
+}
+
+/*LIENS*/
 a{
 	color:black;
 }
@@ -17,6 +23,43 @@ a:hover{
 	color:#9F9A1C;
 }
 
-li{
-	margin:0.3em;
+/*TITRES*/
+
+h1{
+	font-weight: bold;
+	font-size:4em;
+	border-bottom:3px solid #EBE667;
+	margin-top:5%;
+	margin-bottom:3%;
+}
+
+
+/*CAROUSEL*/
+.zonetextcarousel{
+	background-color:rgba(0,0,0,0.4);
+	font-size:1.5em;
+	margin-bottom: 20%;
+}
+
+.titretextcarousel{
+	font-size:2em;
+}
+
+/*TEXTES*/
+
+.descriptionforte{
+	font-size:2em;
+	text-align:center;
+}
+
+/*SECTIONS*/
+
+/*NOS GAMMES*/
+
+.gamme{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:5%;
+	margin-bottom:5%;
 }
