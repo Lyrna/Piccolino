@@ -1,11 +1,12 @@
 body{
 	font-family: 'MathJax_Main', Georgia, serif;
-	background-image:url(assets/img/PDF/PiccolinoFondSite.pdf);
+	background-image: url(../img/IMG3/fond.jpg);
 }
+
 /*BARRE NAVIGATION*/
 .bg-white{
-	border-bottom:3px solid #EBE667;
-	font-size:1.8em;
+	border-bottom:3px solid #DFCB00;
+	font-size:1.6em;
 	color:black;
 	letter-spacing: 0.2em;
 }
@@ -28,7 +29,7 @@ a:hover{
 h1{
 	font-weight: bold;
 	font-size:4em;
-	border-bottom:3px solid #EBE667;
+	border-bottom:3px solid #DFCB00;
 	margin-top:5%;
 	margin-bottom:3%;
 }
@@ -45,6 +46,18 @@ h1{
 	font-size:2em;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 6em; 
+    width: 6em; 
+} 
+
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 /*TEXTES*/
 
 .descriptionforte{
@@ -54,12 +67,59 @@ h1{
 
 /*SECTIONS*/
 
+
 /*NOS GAMMES*/
 
 .gamme{
 	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-	margin-left:15%;
-	margin-right:15%;
+	margin:5%;
+}
+
+.imagegamme{
+	height:auto;
+	width:5em;
+	align-self: center;
 	margin-top:5%;
-	margin-bottom:5%;
+}
+
+/*NOTRE HISTOIRE*/
+
+.sectionpersonnage{
+	background-color: transparent;
+	border:none;
+	margin:5%;
+}
+
+.nom{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.description{
+	text-align: center;
+	font-size:0.8em;
+}
+
+.photo{
+	align-self:center;
+	border-radius:80px;
+	height:10em;
+	width: 10em;
+}
+
+@media screen and (max-width: 600px){
+	.logo{
+		height:3em;
+		width: auto;
+	}
+
+	.carousel{
+		margin-top:9%;
+		padding-top: 10%;
+	}
+
+	.description{
+		font-size: 1.2em;
+	}
 }
