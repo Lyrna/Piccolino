@@ -1,0 +1,22 @@
+body{
+	font-family: 'MathJax_Main', Georgia, serif;
+}
+
+.bg-white{
+	border-bottom:3px solid #EBE667;
+	font-size:1.8em;
+	color:black;
+	letter-spacing: 0.2em;
+}
+
+a{
+	color:black;
+}
+
+a:hover{
+	color:#9F9A1C;
+}
+
+li{
+	margin:0.3em;
+}
