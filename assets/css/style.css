@@ -1,12 +1,18 @@
+@font-face{
+	font-family: 'Garamond Bold';
+	src: url('../font/garamondbold.ttf') format('truetype');
+}
+
 body{
-	font-family: 'MathJax_Main', Georgia, serif;
+	font-family: 'Garamond Bold', Gerogia, serif;
+	color:black;
 	background-image: url(../img/IMG3/fond.jpg);
 }
 
 /*BARRE NAVIGATION*/
 .bg-white{
 	border-bottom:3px solid #DFCB00;
-	font-size:1.6em;
+	font-size:1.8em;
 	color:black;
 	letter-spacing: 0.2em;
 }
@@ -29,10 +35,12 @@ nav a:hover{
 
 h1{
 	font-weight: bold;
-	font-size:4em;
+	font-size:3.3em;
 	border-bottom:3px solid #DFCB00;
 	margin-top:5%;
 	margin-bottom:3%;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
 }
 
 h1[id^="ancre"] {
@@ -47,18 +55,33 @@ h2{
 	font-weight: bold;
 }
 
+h3{
+	font-weight: bold;
+	font-size:2.4em;
+}
+
+h4{
+	font-size:1.3em;
+}
+
 
 /*CAROUSEL*/
+
+/*section carousel*/
 .zonetextcarousel{
 	background-color:rgba(0,0,0,0.4);
 	font-size:1.5em;
 	margin-bottom: 20%;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
 }
 
+/*Texte grand dans carousel*/
 .titretextcarousel{
 	font-size:2em;
 }
 
+/*flèches du carousel*/
 .carousel-control-prev-icon, .carousel-control-next-icon { 
     height: 6em; 
     width: 6em; 
@@ -83,11 +106,13 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 
 /*NOS GAMMES*/
 
+/*section de la carte avec ombres et marges*/
 .gamme{
 	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
 	margin:10%;
 }
 
+/*image gamme*/
 .imagegamme{
 	height:auto;
 	width:5em;
@@ -95,6 +120,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	margin-top:5%;
 }
 
+/*image gamme dans fenêtre modale*/
 .imagegamme2{
 	height:auto;
 	width:10em;
@@ -102,11 +128,13 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	align-self: center;
 }
 
+/*description de la carte*/
 .petittext{
 	font-size:0.6em;
 	font-weight: bold;
 }
 
+/*boutons Lire la suite*/
 .btn{
 	background-color:#DBCF00;
 	font-weight: bold;
@@ -116,29 +144,36 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 }
 
 .btn:hover{
-	background-color:#D6B72A;
+	background-color:#CFB800;
 	font-size:0.8em;
 }
 
 /*NOTRE HISTOIRE*/
 
+/*section de chaque carte de personnage, on enlève le style de la carte*/
 .sectionpersonnage{
 	background-color: transparent;
 	border:none;
 	margin:5%;
 }
 
+/*nom de chaque personne*/
 .nom{
 	text-align: center;
 	font-size: 2em;
 	font-weight: bold;
+	letter-spacing: 0.2em;
 }
 
+/*description en dessous du nom*/
 .description{
 	text-align: center;
 	font-size:0.8em;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
 }
 
+/*photo de la personne arrondie*/
 .photo{
 	align-self:center;
 	border-radius:80px;
@@ -146,10 +181,107 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	width: 10em;
 }
 
+/*Nos origines et nos infrastructures*/
 
-@media screen and (max-width: 600px){
+/*marges de la section et bordures dorées*/
+/*nos origines*/
+.sectionorigine{
+	border-bottom:3px solid #DFCB00;
+	border-top:3px solid #DFCB00;
+	margin-top:5%;
+	margin-left:15%;
+	margin-right:15%;
+	background-color: transparent;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
 
+/*nos infrastructures*/
+.sectionorigine2{
+	border-bottom:3px solid #DFCB00;
+	margin-left:15%;
+	margin-right:15%;
+	background-color: transparent;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
 
+/*on enlève le bg et la bordure de la carte*/
+.bg-transparent{
+	border:none;
+}
+/*image atelier et infrastructures*/
+.imageorigine{
+	height:20em;
+	width: auto;
+	text-align: center;
+}
+
+/*titres Nos Origines et Nos Infrastructures*/
+.titreorigine{
+	margin-top:1em;
+}
+
+/*paragraphe nos origines et nos infrastructures*/
+.paragraphe{
+	font-size:0.9em;
+}
+
+/*Accordéon collapse*/
+
+.categorieaccordeon{
+	margin-left: 15%;
+	margin-right: 15%;
+	padding:10px;
+	background-color: #DFCB00;
+	border:1px solid black;
+	border-radius: 10px;
+}
+
+.categorieaccordeon:hover{
+	background-color: #CFB800;
+}
+
+.texteaccordeon{
+	background-color: white;
+	border-radius: 10px;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+	margin-right:15%;
+	margin-left: 15%;
+	font-size: 0.8em;
+	padding:10px;
+}
+
+#accordion{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: white;
+	margin:0;
+}
+
+.sectionfooter{
+	margin-top:10%;
+	margin-bottom: 10%;
+	border:none;
+}
+
+.logofooter{
+	width:15em;
+	height:auto;
+	align-self: center;
+	margin-top:5%;
+}
+
+.titrefooter{
+	font-size:1.6em;
+	text-align: center;
+}
 
 @media screen and (max-width: 600px){
 /*entête*/
