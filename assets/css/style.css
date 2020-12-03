@@ -82,21 +82,26 @@ h4{
 	word-spacing: 0.1em;
 }
 
-/*images fixées à un maximum pour ne pas avoir une image qui dépasse par rapport à une autre*/
-.maxheight{
-	max-height: 50em;
-}
-
-
 /*Texte grand dans carousel*/
 .titretextcarousel{
 	font-size:2.1em;
 }
 
 /*flèches du carousel*/
+
+.carousel-control-prev, .carousel-control-next{
+	opacity:1;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+	opacity:0.8;
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon { 
     height: 7em; 
     width: 7em;
+    opacity: 100 !important;
+    z-index: 1;
 } 
 
 .carousel-control-prev-icon {
@@ -128,17 +133,17 @@ h4{
 /*image gamme*/
 .imagegamme{
 	height:auto;
-	width:5em;
+	width:100%;
 	align-self: center;
-	margin-top:5%;
 }
 
 /*image gamme dans fenêtre modale*/
 .imagegamme2{
 	height:auto;
-	width:10em;
+	width:100%;
 	display:block;
 	align-self: center;
+	margin-bottom: 5%;
 }
 
 /*description de la carte*/
@@ -152,8 +157,6 @@ h4{
 	background-color:#DBCF00;
 	font-weight: bold;
 	font-size:0.9em;
-	position: relative;
-	z-index:1;
 }
 
 .btn:hover{
@@ -169,6 +172,7 @@ h4{
 	background-color: transparent;
 	border:none;
 	margin:5%;
+	text-align: center;
 }
 
 /*nom de chaque personne*/
@@ -438,6 +442,16 @@ textarea{
 	.iconeRS{
 	height:1.9em;
 	width: auto;
+	}
+
+	.mapsection{
+		margin-top:0;
+	}
+
+	.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 5em; 
+    width: 5em;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -487,8 +501,17 @@ h2{
 /*reseauxsociaux footer*/
 
 	.iconeRS{
-	height:3em;
+	height:2.5em;
 	width: auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 3em; 
+    width: 3em;
+	}
 }
 
 @media screen and (max-width: 300px){
