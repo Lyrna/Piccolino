@@ -10,6 +10,7 @@ body{
 }
 
 /*BARRE NAVIGATION*/
+
 .bg-white{
 	border-bottom:3px solid #DFCB00;
 	font-size:1.8em;
@@ -25,6 +26,10 @@ li{
 /*LIENS*/
 a{
 	color:black !important;
+}
+
+a:hover{
+	cursor:pointer;
 }
 
 nav a:hover{
@@ -90,15 +95,16 @@ h4{
 
 /*flèches du carousel*/
 .carousel-control-prev-icon, .carousel-control-next-icon { 
-    height: 6em; 
-    width: 6em; 
+    height: 7em; 
+    width: 7em;
 } 
 
 .carousel-control-prev-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+	background-image: url("../img/IMG1/flecheprev.png") !important;
 }
+
 .carousel-control-next-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	background-image: url("../img/IMG1/flechenext.png") !important;
 }
 
 /*TEXTES*/
@@ -295,6 +301,10 @@ footer{
   letter-spacing: 0.2em;
 }
 
+.intituleinput{
+	margin:0;
+}
+
 .form-style td {
   padding: 0;
   display: block;
@@ -311,25 +321,6 @@ footer{
 .form-style input[type=text]:hover, .form-style input[type=tel]:hover, .field-text-area:hover{
   background: #E3E3E3;
   cursor:text;
-}
-
-.btn2{
-	background-color:#DBCF00;
-	font-weight: bold;
-	font-size:0.9em;
-	position: relative;
-	z-index:1;
-}
-
-.btn2:hover{
-	background-color:#CFB800;
-	font-size:0.9em;
-	cursor:pointer;
-}
-
-.long:hover{
-	background-color: #EAE7D6;
-	cursor:pointer;
 }
 
 .form-style .field-textarea{
@@ -365,10 +356,11 @@ textarea{
 /*partie contact numéro tel*/
 
 .logofooter{
-	width:15em;
+	width:17em;
 	height:auto;
 	align-self: center;
 	margin-top:5%;
+	margin-bottom:5%;
 }
 
 .icone{
@@ -394,7 +386,8 @@ textarea{
 }
 
 .tel{
-	margin-bottom: 15%;
+	margin-bottom: 10%;
+	margin-top:5%;
 }
 
 /*map footer*/
@@ -406,6 +399,7 @@ textarea{
 	height:20em;
 	width: 20em;
 	text-align: center;
+	margin-top: 8%;
 }
 
 /*mentions légales*/
