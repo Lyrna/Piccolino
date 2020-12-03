@@ -74,7 +74,7 @@
     </div>
         <!--section quatrième image-->
     <div class="carousel-item">
-      <img src="assets/img/IMG2/giorgio.jpg" class="d-block w-100" alt="Third slide">
+      <img src="assets/img/IMG1/musique.jpg" class="d-block w-100" alt="Third slide">
       <div class="carousel-caption d-none d-lg-block zonetextcarousel">
         <span class="titretextcarousel">Partageons la musique ensemble</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -507,7 +507,7 @@
               </div>
             </a>
   </div>
-    <div id="collapseTwo" class="panel-collapse collapse.in" role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body texteaccordeon">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
@@ -535,45 +535,107 @@
 <!--fin des accordéons collapse-->
 
 <!--FOOTER-->
-<footer>
+<footer id="ancre3">
   <div class="container">
   <div class="row">
     <!--informations contact et réseaux sociaux-->
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card sectionfooter">
         <img src="assets/img/IMG2/Logobasdef.png" alt="logo" class="logofooter">
         <div class="card-body">
-          <div class="card-text">
+          <div class="card-text textfooter">
             <p>55,Rue de Vincennes<br>93100&nbsp;Montreuil<br></p>
-            <p>Tel. : 01 52 48 68 20</p>
+            <a href="tel:+00152486820"><p class="tel">Tel. : 01 52 48 68 20</p></a>
+              <div class="icone">
+                <a href="" target="_blank"><img src="assets/img/ReseauxS/Facebook.png" alt="facebook" class="iconeRS"></a>
+                <a href="" target="_blank"><img src="assets/img/ReseauxS/Instagram.png" alt="instagram" class="iconeRS"></a>
+                <a href="" target="_blank"><img src="assets/img/ReseauxS/Twitter.png" alt="twitter" class="iconeRS"></a>
+                <a href="" target="_blank"><img src="assets/img/ReseauxS/Youtube.png" alt="youtube" class="iconeRS"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   <!--formulaire de contact-->
-  <div class="col-12 col-md-4 ">
+  <div class="col-12 col-md-6 col-lg-4 ">
     <div class="card sectionfooter">
         <div class="card-body">
           <div class="card-title titrefooter">Nous Contacter</div>
           <div class="card-text">
-            <p>55,Rue de Vincennes<br>93100&nbsp;Montreuil<br></p>
-            <p>Tel. : 01 52 48 68 20</p>
+            <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     <p class="intituleinput">Nom/Prénom</p>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+             <tr>
+               <td>
+                  <label>
+                     <p class="intituleinput">Numéro de téléphone</p> 
+                  </label>
+               </td>
+               <td>
+                  <input type="tel" name="tel" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     <p class="intituleinput">Sujet</p>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="text" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     <p class="intituleinput">Message</p>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer" class="btn2">      
+               </td>
+            </tr>
+         </table>
+      </form>
           </div>
         </div>
       </div>  
     </div>
   <!--google map situant l'entreprise-->
-  <div class="col-12 col-md-4">
-    <div class="card sectionfooter">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card sectionfooter mapsection">
         <div class="card-body">
           <div class="card-title titrefooter">Nous Trouver</div>
           <div class="card-text">
-            <p>55,Rue de Vincennes<br>93100&nbsp;Montreuil<br></p>
-            <p>Tel. : 01 52 48 68 20</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1938654970827!2d2.4338294152378284!3d48.85451347928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8bcaf5ff%3A0x1e2dad82b90c5e3b!2s55%20Rue%20de%20Vincennes%2C%2093100%20Montreuil!5e0!3m2!1sfr!2sfr!4v1607002450674!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
           </div>
         </div>
       </div>  
     </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <p class="text-center mentions"><a href="">Mentions légales</a> - Copyright &#169; 2020</p>
+  </div>
 </div>
 </div>
 </footer>
