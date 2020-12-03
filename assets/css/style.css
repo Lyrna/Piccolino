@@ -100,8 +100,6 @@ h4{
 .carousel-control-prev-icon, .carousel-control-next-icon { 
     height: 7em; 
     width: 7em;
-    opacity: 100 !important;
-    z-index: 1;
 } 
 
 .carousel-control-prev-icon {
