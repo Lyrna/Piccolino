@@ -57,8 +57,10 @@ margin-bottom: -100px;
 }
 
 h2{
-	font-size:1.1em;
+	font-size:1em;
 	font-weight: bold;
+	margin-top:-2%;
+	margin-bottom: -2%;
 }
 
 h3{
@@ -69,7 +71,6 @@ h3{
 h4{
 	font-size:1.4em;
 }
-
 
 /*CAROUSEL*/
 
@@ -148,20 +149,24 @@ h4{
 .petittext{
 	font-size:0.7em;
 	font-weight: bold;
+	margin-bottom: 0.3em;
 }
 
 /*boutons Lire la suite*/
 .btn{
 	background-color:#DBCF00;
 	font-weight: bold;
-	font-size:0.9em;
+	font-size:0.85em;
 	position:relative;
 	z-index:1;
+	padding:4px;
+	padding-left:1em;
+	padding-right: 1em;
+	margin-bottom: -0.4em;
 }
 
 .btn:hover{
 	background-color:#CFB800;
-	font-size:0.9em;
 	cursor:pointer;
 }
 
@@ -299,7 +304,7 @@ footer{
 
 .form-style {
   margin:10px auto;
-  width: 300px;
+  width: 330px;
   padding: 20px 12px 10px 20px;
   word-spacing: 0.1em;
   letter-spacing: 0.2em;
@@ -479,6 +484,12 @@ h2{
 /*section gamme*/
 	.petittext{
 		font-size:1.2em;
+	}
+
+	.gamme{
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-top:5%;
 	}
 
 	.btn{
